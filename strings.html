@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Test</title>
+    <script>
+        function checkPalindrome() {
+            var str = document.getElementById("inputString").value.toLowerCase().replace(/[^a-zA-Z0-9]/g, ''); // Get the input value and remove non-alphanumeric characters
+            var len = str.length;
+            for (var i = 0; i < len / 2; i++) {
+                if (str[i] !== str[len - 1 - i]) {
+                    document.getElementById("result").innerHTML = "The given string is not a palindrome.";
+                    return;
+                }
+            }
+            document.getElementById("result").innerHTML = "The given string is a palindrome!";
+        }
+    </script>
+</head>
+<body>
+  <link rel='stylesheet' href='style.css'>
+  <h2>Palindrome Test</h2>
+
+ <nav>
+<h3>
+<a href="C:\Users\E4D User\Documents\CSC102\Week 1\index_2nd_upload.html">Index Page | </a>
+<a href="C:\Users\E4D User\Documents\CSC102\Week 1\boards_2nd_upload.html"> Boards Page | </a>
+<a href="C:\Users\E4D User\Documents\CSC102\Week 2\game.html"> Game Page</a>
+</h3>
+</nav>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="result"></p>
+</body>
+</html>
