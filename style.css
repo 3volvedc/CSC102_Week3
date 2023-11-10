@@ -2,7 +2,8 @@ body {
     background-color: #E6DED4;
     color: #303030;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align:center
+    text-align:center;
+    text-decoration: none;
 }
 nav {
     height:60px;
@@ -20,4 +21,13 @@ header {
 }
 button  {
     font-size: 85%;
+}
+a {
+    text-align:right;
+    text-decoration: none;
+    color: #303030;
+}
+h3{
+    text-align:left;
+    
 }

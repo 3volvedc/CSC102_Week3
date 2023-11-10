@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input Validation</title>
+</head>
+<body>
+  <link rel='stylesheet' href='style.css'>
+  <h2>User Input Validation</h2>
+
+ <nav>
+    <h3>
+        |Directory|<br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 1\index_2nd_upload.html">-Index Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 1\boards_2nd_upload.html">-Boards Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 2\game.html">-Game Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 3\strings.html">-Palindrome Test Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 3\strings_V2.html">-User Input Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 4\sounds.html">-Sounds Page</a>
+    </h3>
+</nav>
+    <form id="userForm">
+        Please input the necessary information.<br><br>
+        <label for="first">First Name:</label>
+        <input type="text" id="first" required><br><br>
+
+        <label for="last">Last Name:</label>
+        <input type="text" id="last" required><br><br>
+
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" required pattern="\d{5}" title="Please enter a 5-digit zip code"><br><br>
+
+        <button type="button" onclick="validateInputs()">Submit</button>
+    </form>
+
+    <p id="message"></p>
+<script src="user_input.js"></script>
+
+</body>
+</html>
